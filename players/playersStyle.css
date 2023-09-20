@@ -1,0 +1,56 @@
+html{
+    
+    background-color: rgb(32, 32, 32); 
+    color: darkorchid;
+    text-align: center;      
+    justify-items: center;
+    align-content: center;
+    width: 1000px;
+    font-family: "Open Sans", sans-serif;
+    margin: 0 auto;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+
+.team{
+    width: 1000px;
+    height: 430px;
+    display: flex; 
+}
+.img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5 ease;
+}
+.img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+img{
+    width: 120px;
+}
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 1000px;
+}
+.redes_9z img{
+    width: 32px;
+}
+ul{
+    list-style-image: url(./icons/csgo_item.png);
+    list-style-position: inside;
+}
+h1{
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
