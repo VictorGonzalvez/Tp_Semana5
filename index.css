@@ -1,9 +1,12 @@
 html{
     text-align: center;
     font-size: 120%;
-    background-image: url(./documents/concepto-fondo-estudio-fondo-purpura-sitio-estudio-pendiente-ligera-vacia-abstracta-producto_1258-53569.jpg);
+    background-image: url(./9z_major/documents/concepto-fondo-estudio-fondo-purpura-sitio-estudio-pendiente-ligera-vacia-abstracta-producto_1258-53569.jpg);
     color: rgb(202, 202, 202);
     font-family: "Open Sans", sans-serif
+}
+img{
+    width: 100px;
 }
 body {
     margin: auto;
