@@ -1,0 +1,26 @@
+html{
+    text-align: center;
+    font-size: 120%;
+    background-image: url(./documents/concepto-fondo-estudio-fondo-purpura-sitio-estudio-pendiente-ligera-vacia-abstracta-producto_1258-53569.jpg);
+    color: rgb(202, 202, 202);
+    font-family: "Open Sans", sans-serif
+}
+body {
+    margin: auto;
+    
+    width: 25cm;
+}
+aside{
+    margin: 0;
+    padding: 0;
+}
+hr{
+    border-color: rgb(134, 134, 134);
+    width: auto;  
+}
+a:link{
+    color: yellow;
+}
+a:visited{
+    color: yellow;
+}
