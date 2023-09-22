@@ -1,13 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>9z Avanza a los playoffs de la ESL Pro League</title>
-    <link rel="shortcut icon" href="../players/icons/csgo_icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../9z_major/style.css">
-</head>
-<body>
-    
-</body>
+    <link
+      rel="shortcut icon"
+      href="../players/icons/csgo_icon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../9z_major/style.css" />
+  </head>
+  <script>
+    function enviarMensaje() {
+      alert("Gracias, su comentario fué guardado.");
+      console.log(document.getElementsByName("comentario")[0].value);
+      document.getElementsByName("comentario")[0].value = "";
+      document.getElementsByName("jugador")[0].checked = false;
+      document.getElementsByName("espectador")[0].checked = false;
+    }
+  </script>
+  <body>
+    <header id="Inicio">
+      <h1>CSGO Noticias</h1>
+      <details>
+        <summary>Musica de fondo</summary>
+        <audio controls>
+          <source
+            src="./documents/NCS： 30 Million Subscriber Mix.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <p>
+          Song: Sam Day - BE THE ONE [NCS Release] Music provided by
+          NoCopyrightSounds Free Download/Stream:
+          <a href="http://ncs.io" target="_blank"> http://ncs.io </a>
+        </p>
+      </details>
+      <hr />
+    </header>
+    <nav>
+        <ul id="Indice" class="Indice">
+            <p>Indice</p>
+            <li>
+            <a href="#9z_Noticia"
+              >9z hace historia y clasifica al Major de Antwerp</a
+            >
+          </li>
+  
+          <li>
+            <a href="#Comentarios_caja">Comentarios</a>
+          </li>
+          <li>
+            <a href="#Enlaces_Utiles">Enlaces ultiles</a>
+          </li>
+          <li>
+            <a href="#Creador">Info</a>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+      <form id="Comentarios_caja" action="">
+        <label for="comentario">Inserte aquí su comentario:</label>
+        <input type="text" name="comentario" id="comentario" />
+        <input type="checkbox" name="jugador" id="jugador" />
+        <label for="jugador">Soy jugador</label>
+        <input type="checkbox" name="espectador" id="espectador" />
+        <label for="jugador">Vi el torneo</label>
+        <input
+          type="button"
+          name="Enviar"
+          id="Enviar"
+          value="Enviar"
+          onclick="enviarMensaje()"
+        />
+      </form>
+      <hr />
+      <aside id="Enlaces_Utiles">
+        <table>
+          <td>
+            <figure>
+              <a href="../players/players.html" target="_blank">
+                <img
+                  src="../9z_major/documents/9z_logo.png"
+                  ,
+                  alt="9z_Logo"
+                  ,
+                  title="Enlace a las estadisticas de 9z en HLTV"
+                  height="70"
+                />
+              </a>
+              <figcaption>Enlace al roster de 9z</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="https://fireleague.gg/" target="_blank">
+                <img
+                  src="https://fireleague.gg/wp-content/uploads/2023/05/logo-fireleague.png"
+                  ,
+                  alt="FireLeague Logo"
+                  ,
+                  title="Enlace a la FiRe League"
+                  height="70"
+                />
+              </a>
+              <figcaption>Enlace a la FiRe League</figcaption>
+            </figure>
+          </td>
+          <td>
+            <figure>
+              <a href="https://esl.com/csgo/" target="_blank">
+                <img
+                  src="https://esl.com/wp-content/uploads/2019/01/ESL_Logo_Stacked_RGB_POS.svg"
+                  ,
+                  alt="ESL Logo"
+                  ,
+                  title="Enlace a ESL CSGO"
+                  height="70"
+                />
+              </a>
+              <figcaption>Enlace a ESL CSGO</figcaption>
+            </figure>
+          </td>
+        </table>
+      </aside>
+      <footer id="Creador">
+        <hr />
+        <p>Gonzalvez Victor</p>
+        <a href="mailto:victorricardo.gonzalvezchara@estudiantes.unahur.edu.ar"
+          >Contacto</a
+        >
+        <br />
+        <a href="#Inicio">Ir arriba</a>
+        <br />
+        <a href="../index.html">Volver a la página de Inicio</a>
+      </footer>
+  </body>
 </html>

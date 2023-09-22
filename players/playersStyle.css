@@ -28,6 +28,9 @@ a:visited{
     opacity: .8;
     transition: .5 ease;
 }
+footer{
+    font-size: small;
+}
 .img:hover{
     width: 300px;
     opacity: 1;
