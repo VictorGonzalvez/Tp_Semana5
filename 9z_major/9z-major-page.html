@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9z es el primer equipo argentino en ir al major de csgo.</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="shortcut icon" href="../players/icons/csgo_icon.ico" type="image/x-icon">
 
+</head>
+<script>
+    function enviarMensaje(){
+        alert("Gracias, su comentario fué guardado.")
+        console.log(document.getElementsByName("comentario")[0].value);
+        document.getElementsByName("comentario")[0].value = "";
+        document.getElementsByName("jugador")[0].checked = false;
+        document.getElementsByName("espectador")[0].checked = false;
+    }
+</script>
 <body>
     <header id="Inicio">
-        <!- - utilizado para el encabezado de la pagina una descripcion o una introduccion al tema, logo, nombre, zona
-            de busqueda ->
-            <h1>Noticias sobre CSGO argentino.</h1>
+            <h1>CSGO Noticias</h1>
             <details>
                 <summary>Musica de fondo</summary>
-                <audio controls autoplay>
+                <audio controls>
                     <source src="./documents/NCS： 30 Million Subscriber Mix.mp3" type="audio/mpeg">
                 </audio>
                 <p>Song: Sam Day - BE THE ONE [NCS Release]
@@ -39,7 +47,7 @@
                     <a href="#Enlaces_Utiles">Enlaces ultiles</a>
                 </li>
                 <li>
-                    <a href="#Creador">Creador</a>
+                    <a href="#Creador">Info</a>
                 </li>
             </ul>
     </nav>
@@ -105,28 +113,22 @@
                 siguiente fase del torneo, donde también los acompañarán otros 7 equipos de Europa.</p>
                 <hr >
         </article>
-        <article>
-            
-            <h2 class="titulo_noticia">
-                
-            </h2>
-            <p class="fecha_noticia">Por Tomás Gaete on 18 septiembre, 2023</p>
-        </article>
     </section>
     <form id="Comentarios_caja" action="">
         <label for="comentario">Inserte aquí su comentario:</label>
         <input type="text" name="comentario" id="comentario">
         <input type="checkbox" name="jugador" id="jugador">
         <label for="jugador">Soy jugador</label>
-        <input type="submit" name="Enviar" id="Enviar" value="Enviar">
+        <input type="checkbox" name="espectador" id="espectador">
+        <label for="jugador">Vi el torneo</label>
+        <input type="button" name="Enviar" id="Enviar" value="Enviar" onclick="enviarMensaje()">
     </form>
     <hr >
     <aside id="Enlaces_Utiles">
-        <!- Informacion no relacionada directamente con el titulo pero que puede ser complemento ->
-            <table align="center">
+            <table>
                 <td>
                     <figure>
-                        <a href="./players/players.html" target="_blank">
+                        <a href="../players/players.html" target="_blank">
                             <img src="./documents/9z_logo.png" , alt="HLTV Logo" ,
                                 title="Enlace a las estadisticas de 9z en HLTV" height="70">
                         </a>
@@ -161,7 +163,7 @@
         <br>
         <a href="#Inicio">Ir arriba</a>
         <br>
-        <a href="/index.html"></a>
+        <a href="../index.html">Volver a la página de Inicio</a>
     </footer>
 </body>
 
